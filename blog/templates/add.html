@@ -1,5 +1,13 @@
+{% load crispy_forms_tags %}
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<div class="container">
+
 <form action="" method="post">
     {%csrf_token%}
-    {{form}}
-    <button type="submit">submit</button>
+    {{form|crispy}}
+    <button type="submit" class="btb btn-primary">submit</button>
 </form>
+
+</div>
